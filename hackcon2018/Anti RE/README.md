@@ -32,11 +32,11 @@ Some things to consider:
 - Real memory being accessed is [rsp+188h+4*addr].
 - Our input is stored at the first 16 bytes of virtual memory.
 
-There are 7 different instructions, each assigned to different 
-opcodes:
+There are 8 different instructions, each performing a different
+operation:
 
 ```
-OPCODE	FUNC	FORMAT
+CODE	OP		FORMAT
 ----------------------
 0x0 	XOR		1
 0x2 	OR		1
