@@ -15,15 +15,15 @@ each time the app is run. Instructions are in one of the following two
 formats:
 
 ```
-1.	instruction opcode  +  dstaddr  +  srcaddr
-	     (1 byte)         (1 byte)	  (1 byte)
+1.	instruction code  +  dstaddr  +  srcaddr
+	     (1 byte)       (1 byte)    (1 byte)
 ```
 
 or
 
 ```
-2.	instruction opcode  +  dstaddr  +  value
-	     (1 byte)         (1 byte)    (4 bytes)
+2.	instruction code  +  dstaddr  +  value
+	     (1 byte)       (1 byte)    (4 bytes)
 ```
 
 Some things to consider:
