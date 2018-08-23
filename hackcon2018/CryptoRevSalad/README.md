@@ -114,8 +114,7 @@ we just need to reverse the binary and decode this message.
 App starts by creating a string:
 
 ```
-"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ{}[]()_1234567890!
-@#$%^&*<>?"
+"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ{}[]()_1234567890!@#$%^&*<>?"
 ```
 
 Which will be used as a key for encoding. The input is taken right after.
