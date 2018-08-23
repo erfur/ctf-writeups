@@ -40,8 +40,7 @@ encoded super secret code but I'm unable to decode it. Please help me.
         >       To: Not Hacker Man <thehacker@hackcon.in>
         >
         >       Hey, how you not !(doin')?
-        >       Thanks for asking the encoded super secret message is 
-enclosed in the following hash box.
+        >       Thanks for asking the encoded super secret message is enclosed in the following hash box.
         >
         >       ########################################################################################################################
         >       #`0vo&jm1[`F.^t.RGG..#`2.;c).lvZk{|.~B...[II..D..#
@@ -58,8 +57,7 @@ enclosed in the following hash box.
                 >
                 >
                 >       Hey, how you doin'?
-                >       Can you send super secret codes that we wrote. 
-But I think our mail is not secure enough so don't sent them in 
+                >       Can you send super secret codes that we wrote. But I think our mail is not secure enough so don't sent them in 
 paintext.
                 >
                 >       Regards
@@ -152,29 +150,31 @@ function is called. In short, for each 16-byte block:
 To illustrate:
 
 ```
+(⊕):XOR
  -------------------------------
 |0|1|2|3|4|5|6|7|8|9|a|b|c|d|e|f| 16-byte block from input
  -------------------------------
  \ | | / \ | | / \ | | / \ | | /
-   XOR     XOR     XOR     XOR
+   ⊕        ⊕       ⊕       ⊕
     \       |       |       /
 	  \      |     |      /
 	    \     |   |     /
 	      \    | |    /
 			\  | |  /
 			  \| |/
-			   XOR--------------------.
+			    ⊕ --------------------.
 			                          |
 									  |
  -------------------------------      |
 |0|1|2|3|4|5|6|7|8|9|a|b|c|d|e|f| 16-byte block from input
  -------------------------------      |
   \ | | / \ | | / \ | | / \ | | /     |
-   XOR     XOR     XOR     XOR        |
+    ⊕       ⊕       ⊕       ⊕         |
     |   .---|---.---|---.---|---------|
     v   |   v   |   v   |   v         |
-   XOR <'  XOR <'  XOR <'  XOR <------'
+    ⊕  <'   ⊕  <'   ⊕  <'   ⊕  <------'
  / | | \ / | | \ / | | \ / | | \
+ ⊕ ⊕ ⊕ ⊕ ⊕ ⊕ ⊕ ⊕ ⊕ ⊕ ⊕ ⊕ ⊕ ⊕ ⊕ ⊕
  -------------------------------
 |0|1|2|3|4|5|6|7|8|9|a|b|c|d|e|f| 16-byte block from input
  -------------------------------
