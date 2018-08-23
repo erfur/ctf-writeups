@@ -189,7 +189,7 @@ in its respective 16-byte block. So, to get any character, we only need
 to XOR the rest of its block and XOR the result with it. The following 
 code decodes the string and prints the flag:
 
-```
+```python
 a = "`0vo&jm1[`F\x0f^t\x1eRGG\x19\x1d#`2\x0e;c)\x0flvZk{|\x14~B\x12\x04\x03[II\x15\x17D\x10\x11"
 
 for i in range(0, len(a), 16):
