@@ -91,8 +91,8 @@ And the second one is this hexdump (shortened version):
 ```
 
 Apparently this hexdump has the wrong endianness. After transforming it back to raw data with 
-[chef](https://gchq.github.io/CyberChef/#recipe=From_Hexdump()Swap_endianness('Raw',2,false)):
-We get a zip file with an executable called "encode" in it. When 
+[chef](https://gchq.github.io/CyberChef/#recipe=From_Hexdump()Swap_endianness('Raw',2,false)),
+we get a zip file with an executable called "encode" in it. When 
 executed, the app will as for a message to encode, then print the 
 encoded message. Since we know the encoded message
 
