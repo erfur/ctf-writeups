@@ -90,7 +90,8 @@ And the second one is this hexdump (shortened version):
 00012db
 ```
 
-After transforming the hexdump back to raw data with:
+Apparently this hexdump has the wrong endianness. After transforming it back to raw data with 
+[chef](https://gchq.github.io/CyberChef/#recipe=From_Hexdump()Swap_endianness('Raw',2,false)):
 
 ```
 $ xxd -r > file
