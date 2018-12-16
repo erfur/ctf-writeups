@@ -1,4 +1,4 @@
 # CTF Writeups
 
-* https://github.com/erfur/ctf-writeups/tree/master/hackcon2018/Anti%20RE
-* https://github.com/erfur/ctf-writeups/tree/master/hackcon2018/CryptoRevSalad
+* [HackCon2018 - Anti RE](https://erfur.github.io/ctf-writeups/hackcon2018/Anti%20RE)
+* [HackCon2018 - CryptoRevSalad](https://erfur.github.io/ctf-writeups/hackcon2018/Anti%20RE)
